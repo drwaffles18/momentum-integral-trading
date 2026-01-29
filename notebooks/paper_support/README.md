@@ -27,3 +27,22 @@ Comparación final entre el modelo de momentum físico puro, el modelo combinado
 
 Para la lectura rápida de los resultados, se recomienda consultar las versiones exportadas en HTML disponibles en el directorio `html/`.
 
+### 🧠 Artefactos entrenados
+
+**regime_model_decision_tree.pkl**
+
+Modelo final de clasificación de regímenes dinámicos entrenado con la totalidad del dataset histórico
+utilizado en el paper. El artefacto contiene:
+
+- el clasificador basado en árboles de decisión,
+- la lista exacta de variables de entrada,
+- metadatos de entrenamiento (fecha, métrica CV).
+
+Este modelo se utiliza para:
+- el análisis de interpretabilidad presentado en el paper,
+- la evaluación exploratoria fuera de muestra (forward).
+
+El modelo no predice precios ni retornos, sino que clasifica operaciones como regímenes
+frágiles o no frágiles a partir de características tempranas del trade.
+
+
